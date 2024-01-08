@@ -1,0 +1,45 @@
+.dashboard-main-container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+
+
+.dashbord-contain{
+    width:100%;
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr ;
+    gap: 20px;
+  
+}
+.location-pain{
+    width:100%;
+    height:450px;
+    background-color: #fff;
+    border-radius:10px;
+    grid-row: 1/4;
+    grid-column:1/2;
+}
+.appointments{
+    width:100%;
+    background-color:#fff;
+    border-radius:10px;
+    grid-row: 1/3;
+}
+.hepitatis{
+    width:100%;
+    background-color: #fff;
+    border-radius:10px;
+    grid-row: 1/3;
+}
+.daily-appont{
+    width:100%;
+    background-color: #fff;
+    border-radius:10px;
+    grid-row: 3/4;
+    grid-column:2/4;
+}
+

@@ -1,0 +1,37 @@
+body{
+  width:100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: aliceblue;
+ 
+}
+/*this is the main-container (page) with grid*/
+.main-container{
+  display: grid;
+  grid-template-columns:200px 1fr;
+  grid-template-rows:60px 1fr;
+  grid-template-areas:
+  'sidebar header  header '
+  'sidebar menubar  menubar'
+  ' sidebar menubar menubar '
+  ;
+  height: 100vh;
+  gap:5px;
+}
+/* this is the child of the main-container*/
+.header{
+ grid-area: header;
+
+}
+
+.sidebar{
+  background-color: #fff;
+  grid-area: sidebar;
+}
+
+.menubar{
+background-color: aliceblue;
+grid-area: menubar ;
+overflow: hidden;
+}

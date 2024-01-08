@@ -1,0 +1,21 @@
+
+
+
+.side-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: fixed;
+    padding:10px 0 10px 10px;
+}
+.main-sidebar-container {
+    width:100%;
+    height: auto;
+}
+.h-link {
+    display:flex;
+    justify-content:flex-start;
+    align-items: center;
+    flex-direction: row;
+    padding:15px 0 0 10px;
+}

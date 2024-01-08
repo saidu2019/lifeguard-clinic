@@ -1,0 +1,32 @@
+
+.header-container{
+    display: flex;
+    justify-content:space-around;
+    flex-direction: row;
+}
+.search-container{
+   width:300px;
+   height: auto;
+   background-color:#fff;
+   display: flex;
+   justify-content: center;
+   border-radius:8px;
+}
+.search{
+    border:none;
+    outline:none;
+    border-radius:8px;
+}
+.notifications{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box-n{
+    outline:none;
+}
+.noti{
+   margin-left: 20px;
+   outline:none;
+   border:none;
+}

@@ -28,7 +28,7 @@ const Doctors=()=>{
         <div className='photo-name-occupation flex justify-center items-start flex-row'>
         <img src='../images/cardiologist.jpg' className=' w-[60px] h-[60px] rounded-full' alt='image'/>
         <div className='name-occupation flex justify-start flex-col gap-1 pl-2'>
-          <h2 className='name font-bold'>Dr. faith mary </h2>
+          <h2 className='name font-bold'>Dr. faith joe </h2>
           <h3 className='occupation font-semibold'>Cadiologist</h3>
         </div>
         </div>

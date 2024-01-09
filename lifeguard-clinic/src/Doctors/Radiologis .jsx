@@ -2,7 +2,7 @@ import React from 'react'
 
 function Radiologis () {
   return (
-    <div>Radiolologist </div>
+    <div>Dentistry </div>
   )
 }
 

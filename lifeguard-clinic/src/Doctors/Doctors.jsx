@@ -1,7 +1,57 @@
 import './Doctors.css'
 import Radiologis from './Radiologis '
+import React,{useState,useEffect} from 'react'
 
 const Doctors=()=>{
+  const [consultantname, setConsultantName]= useState(0)
+  const [consultantimage, setConsultantImage]=useState(0)
+  const [doctors, setDoctorsName]=useState(0)
+
+
+    {/*consulant occupation*/}
+  const consultants=['Cardiologist',
+                     'Psychologist',
+                      'Dentistry',
+                      'Radiologist'
+                      ]
+    
+     {/*consulant image*/}
+  const imageConsultant= ['https://img.freepik.com/premium-photo/doctor-happy-man-portrait-studio-with-smile-from-success-motivation-stethoscope-happiness-medical-consultant-hospital-worker-with-gray-background-smiling-about-health-vision_590464-169717.jpg',
+  'https://img.freepik.com/free-photo/woman-doctor-wearing-lab-coat-with-stethoscope-isolated_1303-29791.jpg',
+   'https://www.shutterstock.com/image-photo/young-asian-female-doctor-standing-600nw-2138546201.jpg',
+    'https://media.istockphoto.com/id/1390000431/photo/shot-of-a-mature-doctor-using-a-digital-tablet-in-a-modern-hospital.jpg?s=612x612&w=0&k=20&c=ofnikeDwvLhhEvLpSuQME5kWclGchqUKSHQFdQ4mcWo=']
+
+  {/*doctors name*/}
+
+  const docName=['Satiya Manaf',
+              'Mary Green',
+              'Faith Jeo',
+               'Abdulaziz Isyaka']
+
+
+useEffect(()=>{
+    const consultantTimeInverval= setInterval(()=>{
+      setConsultantName((preIndex)=>(preIndex + 1) % consultants.length)
+    },3000)
+    return()=>clearInterval(consultantTimeInverval)
+    
+},[consultantname,consultants.length])
+
+useEffect(()=>{
+  const ConsultantImagesInterval= setInterval(()=>{
+    setConsultantImage((preIndex)=>(preIndex + 1) % imageConsultant.length)
+  },3000)
+  return()=>clearInterval(ConsultantImagesInterval)
+  
+},[consultantimage,imageConsultant.length])
+
+useEffect(()=>{
+     const doctorNameInterval = setInterval(() => {
+      setDoctorsName((preIndex)=>(preIndex + 1) % docName.length)
+     },3000)
+     return()=>clearInterval(doctorNameInterval)
+},[doctors,docName.length])
+
   return (
 
     <div className='doc-container'>
@@ -26,10 +76,10 @@ const Doctors=()=>{
       {/*consultant name and -- */}
        <div className='consultant-name flex justify-around items-center flex-row gap-40 mt-3 p-4'>
         <div className='photo-name-occupation flex justify-center items-start flex-row'>
-        <img src='../images/cardiologist.jpg' className=' w-[60px] h-[60px] rounded-full' alt='image'/>
+        <img src={imageConsultant[consultantimage]} className=' w-[60px] h-[60px] rounded-full  border-blue-500 border-2' alt={`image${consultantimage + 1}`}/>
         <div className='name-occupation flex justify-start flex-col gap-1 pl-2'>
-          <h2 className='name font-bold'>Dr.Mary jeo </h2>
-          <h3 className='occupation font-semibold'>Cadiologist</h3>
+          <h2 className='name font-bold'>Dr.{docName[doctors]} </h2>
+          <h3 className='occupation font-semibold w-[200px]h-[30px]  text-yellow-400'>{consultants[consultantname]}</h3>
         </div>
         </div>
         <div className='send-rqs flex justify-center items-center flex-row gap-5 mt-5'>

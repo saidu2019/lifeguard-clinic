@@ -1,0 +1,9 @@
+
+.video-details{
+    background-image: url(../img/cardiologist.jpg);
+    background-position:center;
+    background-size: cover;
+    border-radius:20px;
+    height:250px;
+    backdrop-filter:blur(100);
+}

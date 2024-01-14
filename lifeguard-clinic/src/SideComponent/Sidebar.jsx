@@ -14,8 +14,8 @@ const Sidebar=()=>{
         <aside className='main-sidebar-container '>
        
         <logo className='logo'>
-        <h2 className='logo-name flex justify-center flex-row'>
-            LIFE GUARD <span className='text-blue-500'> CLINIC</span><MdHealthAndSafety className='w-8 h-8'/>
+        <h2 className='logo-name flex justify-center flex-row font-bold'>
+            LIFEGUARD <span className='text-blue-500 font-bold pl-[4px]'> CLINIC</span><MdHealthAndSafety className='w-8 h-8'/>
         </h2>
         </logo>
        <div className='emg'> </div>

@@ -6,7 +6,7 @@ import { GiHamburgerMenu } from "react-icons/gi";
 const VideoAppointment=()=> {
   return (
     <div className='vidio-container mb-6'>
-      <h3 className='text-lg text-blue-500 font-semibold'> vidioAppointment</h3>
+      <h3 className='text-lg text-blue-500 font-semibold'> video Appointment</h3>
     <div className='video-details rounded-2xl mb-10 pt-[100px]'>
       <div className='d-text pl-2'>
       <h3 className='d-name text-lg font-bold text-black'>Dr.Rozy James</h3>

@@ -1,8 +1,15 @@
-import React from 'react'
+
 
 function DocsAppointment() {
   return (
-    <div>DocsAppointment</div>
+    <div className="doc-container">
+            <div className="Radiology">
+                  
+            </div>
+            <div className="cadiology">
+              
+            </div>
+    </div>
   )
 }
 

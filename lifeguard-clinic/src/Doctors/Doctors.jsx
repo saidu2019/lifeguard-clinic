@@ -14,6 +14,7 @@ const Doctors=()=>{
     <div className='videoappointment'><VideoAppointment/></div>
     <div className='doc-app'><DocsAppointment/></div>
     <div className='past-detail'><PastDetails/></div>
+    
 
   </div>
   )

@@ -29,7 +29,7 @@ const LocationPain=()=>{
      <img src={image[change]}  alt={`image ${ change + 1}`}
       className='w-60 h-80 flex m-auto mt-10'/>
       
-    </section>
+    </section> 
   )
 }
 
